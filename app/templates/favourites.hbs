@@ -1,0 +1,21 @@
+Este es el template favs
+
+{{#each model.array as |fav|}}
+
+<article class="blog-post">
+  <h3>{{fav.Title}}</h3>
+  <div class="">
+    {{fav.Body}}
+  </div>
+</article>
+
+{{/each}}
+
+<article class="blog-post">
+  <h3>{{model.obj.name}}</h3>
+  <div class="">
+    {{model.obj.weapon}}
+  </div>
+</article>
+
+{{!-- {{outlet}} --}}
