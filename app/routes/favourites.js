@@ -10,11 +10,13 @@ export default Route.extend({
       array:[
         {
           Title: 'Rogue',
-          Body: 'Mutant'
+          Body: 'Mutant',
+          Img: 'images/Rogue.png'
         },
         {
           Title: 'Gambit',
-          Body: 'Mutant'
+          Body: 'Mutant',
+          Img: 'images/Gambit.png'
         }
       ]
     };

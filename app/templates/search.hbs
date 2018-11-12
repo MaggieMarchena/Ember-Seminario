@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-12">
+    Este es el template search
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <img src="images/marvel-logo.png" alt="">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    {{input value=searchTerm type='text'}}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <button {{action "doSearch" searchTerm}}>Buscar</button>
+  </div>
+</div>

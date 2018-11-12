@@ -11,7 +11,8 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('favourites', { path: '/favs' });
-  this.route('characters');
+  this.route('search-results');
+  this.route('search');
 });
 
 export default Router;

@@ -1,21 +1,40 @@
 Este es el template favs
 
-{{#each model.array as |fav|}}
+<div class="row">
+  <div class="col-12">
+    Estos son los elementos del array:
 
-<article class="blog-post">
-  <h3>{{fav.Title}}</h3>
-  <div class="">
-    {{fav.Body}}
+    {{#each model.array as |fav|}}
+
+      <article class="blog-post">
+        <h3>{{fav.Title}}</h3>
+        <div class="row">
+          <div class="col-12">
+            {{fav.Body}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <img class="fav-character" src={{fav.Img}} alt="">
+          </div>
+        </div>
+      </article>
+
+    {{/each}}
+
   </div>
-</article>
+</div>
 
-{{/each}}
+<div class="row">
+  <div class="col-12">
+    Este es el objeto:
 
-<article class="blog-post">
-  <h3>{{model.obj.name}}</h3>
-  <div class="">
-    {{model.obj.weapon}}
+    <article class="blog-post">
+      <h3>{{model.obj.name}}</h3>
+      <div class="">
+        {{model.obj.weapon}}
+      </div>
+    </article>
+
   </div>
-</article>
-
-{{!-- {{outlet}} --}}
+</div>
