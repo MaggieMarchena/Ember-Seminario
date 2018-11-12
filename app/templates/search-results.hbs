@@ -1,21 +1,9 @@
 <div class="row">
   <div class="col-12">
 
-    {{#each model.array as |fav|}}
+    {{#each model.array as |character|}}
 
-      <article class="blog-post">
-        <div class="row">
-          <div class="col-3">
-            <img class="fav-character" src={{fav.Img}} alt="">
-          </div>
-          <div class="col-6">
-            <h3>{{fav.Title}}</h3>
-          </div>
-          <div class="col-3">
-            {{fav.Body}}
-          </div>
-        </div>
-      </article>
+      {{character-item Title=character.Title Body=character.Body Img=character.Img}}
 
     {{/each}}
 
