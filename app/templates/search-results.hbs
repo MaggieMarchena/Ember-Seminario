@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-12">
 
-    {{#each model.array as |character|}}
+    {{#each model.data.results as |character|}}
 
-      {{character-item Title=character.Title Body=character.Body Img=character.Img}}
+      {{character-item Title=character.name Description=character.description Img=(concat character.thumbnail.path "." character.thumbnail.extension)}}
 
     {{/each}}
 
